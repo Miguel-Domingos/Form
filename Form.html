@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="./data.html">
+            <h2>Create User Account</h2>
+            <div class="row DoubleField">
+                <div class="col FlexEffect">
+                    <div class="field">
+                        <input type="text" id="FirstName" maxlength="15" onkeyup="validation(this)" required>
+                        <span class="text">Nome Completo</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                
+                <div class="col FloatingEffect ">
+                    <div class="field">
+                        <input type="text" id="LastName" maxlength="15"  onkeyup="validation(this)" required>
+                        <span class="text">Sobrenome</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row DoubleField">
+                <div class="col FlexEffect">
+                    <div class="field">
+                        <input type="password" id="Password1" maxlength="8" onkeyup="validation(this)" required>
+                        <span class="text">Senha</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                
+                <div class="col FloatingEffect">
+                    <div class="field">
+                        <input type="password" id="Password2" maxlength="8" onkeyup="validation(this)" required>
+                        <span class="text">Confirmar Senha</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <div class="field">
+                        <input  style="text-align: center;" type="date" id="Date" onchange="validation(this)" required>
+                        <span class="text">Aniversário</span>
+                        <span class="line"></span>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <div class="field">
+                        <input type="text" id="Email" maxlength="30" onkeyup="validation(this)" required>
+                        <span class="text">Email</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <div class="ButtonEffect">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <input type="submit" id="SubmitInput" onkeyup="style.color = '#000'" value="Send" onfocus="Submit()" onmouseout="style.color = '#000'" onmouseover="Submit()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>    
+    </div>
+    <p style="position: absolute; bottom: 0; color: rgb(70, 70, 70); font-size: .7em; padding-bottom: 5px;">Criado por Miguel-Domingos</p>
+        
+    <script src="./Form.js"></script>
+    </body>
+    </html>

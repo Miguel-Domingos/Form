@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Data</title>
+</head>
+<body>
+    <div>
+        Nome:  <b id="nome"></b><br>
+        Senha:  <b id="senha"></b><br>
+        Data de Nascimento:  <b id="data"></b><br>
+        Email:  <b id="email"></b>
+    </div>
+
+    <script>
+        const setDados = JSON.parse(localStorage.getItem('Dados'))
+        document.querySelector('#nome').innerHTML = setDados.nome
+        document.querySelector('#senha').innerHTML = setDados.senha
+        document.querySelector('#data').innerHTML = setDados.data
+        document.querySelector('#email').innerHTML = setDados.email
+        localStorage.clear()
+    </script>
+</body>
+</html>
